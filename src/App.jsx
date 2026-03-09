@@ -3,6 +3,7 @@ import { HomePage } from "./pages/HomePage";
 import { CheckoutPage } from "./pages/CheckoutPage";
 import { OrdersPage } from "./pages/OrdersPage";
 import { TrackingPage } from "./pages/TrackingPage";
+import { ErrorPage } from "./pages/ErrorPage";
 import './App.css';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <Route path="orders" element={<OrdersPage />} />
 
       <Route path="tracking" element={<TrackingPage />} />
+
+      <Route path="errorpage" element={<ErrorPage />} />
 
     </Routes>
 
