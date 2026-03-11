@@ -6,14 +6,14 @@ import { formatMoney } from "../../utils/money.js"
 export function Product({ product, loadCart }) {
   const [quantity, setQuantity] = useState(1);
 
-  function addToCart() {
-    async () => {
+  async function addToCart() {
       await axios.post("/api/cart-items", {
         productId: product.id,
         quantity
       });
       await loadCart();
-    }
+
+      console.log("working");
   };
 
   const selectQuantity = (event) => {
